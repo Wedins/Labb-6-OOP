@@ -10,7 +10,6 @@ namespace Labb_6_OOP
         public string Name { get; set; }
         public string Gender { get; set; }
         public decimal Salary { get; set; }
-
         public Employee(int id, string name, string gender, decimal salary)
         {
             Id = id;
@@ -18,14 +17,9 @@ namespace Labb_6_OOP
             Gender = gender;
             Salary = salary;
         }
-
-        
-
         public override string ToString()
         {
             return $"{Id}, {Name}, {Gender}, {Salary}";
-
         }
-
     }
 }
