@@ -20,7 +20,7 @@ namespace Labb_6_OOP
             employeesList.Add(employee4);
             employeesList.Add(employee5);
 
-            PushEmployees(employees, employeesList);
+            PushEmployees(employees);
 
             foreach (var e in employees)
             {
@@ -34,9 +34,9 @@ namespace Labb_6_OOP
                 Console.WriteLine($"\nDet finns {employees.Count} kvar.");
             }
 
-            PushEmployees(employees, employeesList);
+            PushEmployees(employees);
 
-            Console.WriteLine("\nHär börjar peek loopen.");
+            Console.WriteLine("\n--------------------------------");
             for (int i = 0; i < 2; i++)
             {
                 Console.WriteLine(employees.Peek());
@@ -92,7 +92,7 @@ namespace Labb_6_OOP
                 Console.WriteLine(males);
             }
         }
-        static void PushEmployees(Stack<Employee> employees, List<Employee> employeeList)
+        static void PushEmployees(Stack<Employee> employees)
         {
             employees.Push(new Employee(1, "Jonna", "Female", 25.750m));
             employees.Push(new Employee(2, "Johan", "Male", 28.350m));
